@@ -1,0 +1,56 @@
+<!-- 
+   2 Lojas
+      Quantos produtos foram produzidos, quantos vendidos e agrupado por nome dos produtos
+
+      Obs: Atributos
+      - rowspan="" - ocupe ** linhas 
+      - colspan="" - ocupe ** colunas
+      - <colgroup> - atributos exclusivos de coluna
+      
+         -  scope="" - define agrupamento de:
+            - linha (row)  
+            - coluna (col) 
+            - agrupamento de colunas (colgroup)
+-->
+<table>
+   <caption>Produzidos x Vendidos p/ Loja</caption>
+
+<colgroup>
+   <col>
+   <col span="2" style="background-color: rgb(136, 124, 124);">
+   <col span="2" style="background-color: rgb(90, 89, 89);">
+</colgroup>
+
+   <thead>
+      <tr>
+         <th rowspan="2"></th>
+         <th colspan="2" scope="colgroup">Loja 1</th>
+         <th colspan="2" scope="colgroup">Loja 2</th>
+      </tr>
+
+      <tr>
+         <th scope="col">Produzidos</th>
+         <th scope="col">Vendidos</th>
+         <th scope="col">Produzidos</th>
+         <th scope="col">Vendidos</th>
+      </tr>
+   </thead>
+
+   <tbody>
+      <tr>
+            <th scope="row">Vassouras</th>
+            <td>50</td>
+            <td>30</td>
+            <td>20</td>
+            <td>20</td>
+      </tr>
+
+      <tr>
+            <th>Baldes</th>
+            <td>10</td>
+            <td>10</td>
+            <td>30</td>
+            <td>25</td>
+      </tr>
+   </tbody>
+</table>
